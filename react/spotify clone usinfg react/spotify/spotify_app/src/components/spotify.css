@@ -1,0 +1,204 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: black;
+}
+.logo{
+    height: 45px;
+    width: 150px;
+    margin-left: 20px;
+}
+.home{
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 29px;
+}
+.h1{
+    margin-left: 49px;
+}
+.cointainer1{
+    background-color: black;
+    height: 100%;
+    width: 270px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.text{
+    color:white;
+    margin-top: -21px;
+    margin-left: 72px;
+    font-size: 19px; 
+}
+.Search{
+    height: 20px;
+    margin-top: -10px;
+    margin-left: 29px;
+}
+.buttons-homes{
+    margin-top: 19px;
+}
+.create{
+    margin-left: 31px;
+    height: 20px;
+}
+
+.text1{
+color: white;
+margin-left: 33px;
+font-size: 18px;
+margin-top:-10px ;
+}
+.install{
+    
+    margin-left: 31px;
+    height: 20px;
+    margin-top: -10px;
+
+}
+.homearound{
+   
+    height: 28px;
+    width: 190px;
+    margin-left: 20px;
+    margin-top: -537px;
+    background-color: #262626;
+    border-radius: 6px;
+}
+.toparrow{
+    margin-top:-10px;
+    margin-left: 265px;
+    height: 30px;
+}
+.cointainer2{
+    /* border: 2px solid red; */
+    margin-top: -620px;
+    margin-left: 50px;
+}
+.user{
+    margin-left: 950px;
+    /* margin-top: -10px; */
+}
+.good{
+   color: white;
+   margin-left: 265px;
+   margin-top:1px;
+}
+.cointainer3{
+     margin-left: 276px;
+display: grid;   
+grid-template-columns: repeat(4,300px);
+/* border: 2px solid red; */
+row-gap: 15px;
+    
+}
+.likedviedo{
+    display: flex;
+    gap: 40px;
+    width: 18rem;
+    height: 60px;
+    /* border: 2px solid red; */
+    margin-left: 40px;
+    background-color: #2c2c2c;
+
+}
+
+.liked1{
+    height: 60px;
+    }
+    .liked{
+        color: red;
+        background-color: #2c2c2c;
+        font-size: 18px;
+        height: 40px;
+
+    }
+    .te-xt{
+        background-color: #2c2c2c;
+        /* border: 2px solid red; */
+        height: 60px;
+
+    }
+  
+    .card{
+        margin-left: 340px;
+        display: grid;
+        grid-template-columns: repeat(6,195px);
+    }
+    .card1 img{
+        width: 130px;
+        height: 120px;
+        padding: 10px;
+        background-color:#2c2c2c;
+
+    }
+    .card1{
+      
+        /* border: 2px solid red; */
+        width: 150px;
+        background-color: #2c2c2c;
+        border-radius: 10px;
+    }
+    .card1 p{
+        color: white;
+        margin-left: 0.5rem;
+        background-color: #2c2c2c;
+
+    }
+    .whole{
+    
+        height:94vh;
+        width: 1349px;
+        background-color: #0E0E0E;
+    }
+    h2{
+        color: white;
+        margin-left: 320px;
+        margin-top: 40px;
+    }
+       h4{
+        color:grey;
+        margin-left: 1250px;
+        margin-top: -40px;
+
+       }
+       .footer{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        margin-top: -80px;
+        background-color: #121212;
+       }
+       .footer1{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        width: 300px;
+        margin-left:50px;
+        height: 55px;
+       
+       }
+       .xx{
+        height: 50px;
+        margin-left: 15px;
+       }
+       #Netflix{
+        color: white;
+        margin-top: 6px;
+        margin-left: 30px;
+       }
+        #dil{
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 12px; 
+       }
+       .footer2{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        width: 500px;
+       margin-left: 500px;
+        height: 55px;
+               }
+               .xxx{
+                height: 60px;
+               }
