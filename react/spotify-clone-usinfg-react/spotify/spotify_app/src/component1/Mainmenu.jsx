@@ -1,6 +1,5 @@
-import React, {useSate, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './spotify.css'
-import { useState } from 'react';
 
 
 function Mainmenu(){
@@ -38,7 +37,7 @@ const[data,setData] = useState([]);
 useEffect(()=>{
 
 
-    fetch("http://localhost:3000/api/data")
+    fetch("https://react-js-5vlk.onrender.com/api/data")
 .then(response => {
     if(!response.ok){
         throw new Error(`HTTP error! status : ${response.status}`)
