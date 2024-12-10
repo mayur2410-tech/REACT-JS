@@ -4,6 +4,7 @@ import './mainmenu.css'
 
 function Mainmenu() {
 
+// main menu fetch api
 
     const[main,setMain]=useState([]);
     useEffect(()=>{
@@ -21,19 +22,25 @@ function Mainmenu() {
         .catch((error)=>console.error(`Error to fetch api`,error));
     },[])
 
-    const suggestion = [
-        {id:1,sugg:'All'},
-        {id:2,sugg:'Cook Studio'},
-        {id:3,sugg:'UX'},
-        {id:4,sugg:'Case Study'},
-        {id:5,sugg:'Music'},
-        {id:6,sugg:'Bangla Lofi'},
-        {id:7,sugg:'Tour'},
-        {id:8,sugg:'Saintmartin'},
-        {id:9,sugg:'Tech'},
-        {id:10,sugg:'iPhone 13'},
-        {id:11,sugg:'User Interface Design'},
-    ]
+// sugesstion api fetch
+
+const[suggestion,setSuggestion]=useState([])
+
+useEffect(()=>{
+    fetch('https://youtube-api-duz1.onrender.com/api/suggestion')
+    .then(response=>{
+        if(!response.ok){
+            throw new Error(`HTTP error ${response.status}`)
+        }
+        return response.json()
+})
+.then(suggestion=>{
+    console.log(suggestion)
+    setSuggestion(suggestion)
+})
+.catch((error)=>console.error('error to fetch',error))
+
+},[])
 
     return (
         <>
