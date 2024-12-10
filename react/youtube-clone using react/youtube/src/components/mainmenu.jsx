@@ -17,6 +17,20 @@ function Mainmenu() {
         { id: 12, img: 'https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-3.png?raw=true', logo: 'https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse 1 (5).png?raw=true', text: 'Bulbuli | Coke Studio Bangla |', text1: 'Season One | Ritu Raj X Nandita', verify: 'https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true', thumbnail: 'Coke Studio Bangla', thumbnail1: '1.5M views 2 days ago' },
     ]
 
+    const suggestion = [
+        {id:1,sugg:'All'},
+        {id:2,sugg:'Cook Studio'},
+        {id:3,sugg:'UX'},
+        {id:4,sugg:'Case Study'},
+        {id:5,sugg:'Music'},
+        {id:6,sugg:'Bangla Lofi'},
+        {id:7,sugg:'Tour'},
+        {id:8,sugg:'Saintmartin'},
+        {id:9,sugg:'Tech'},
+        {id:10,sugg:'iPhone 13'},
+        {id:11,sugg:'User Interface Design'},
+    ]
+
     return (
         <>
             <div className="mainmenu">
@@ -66,17 +80,9 @@ function Mainmenu() {
                     <hr className='hr' />
 
                     <div className="suggestion">
-                        <div className="navtext all">All</div>
-                        <div className="navtext">Cook Studio</div>
-                        <div className="navtext">UX</div>
-                        <div className="navtext">Case Study</div>
-                        <div className="navtext">Music</div>
-                        <div className="navtext">Bnagla Lofi</div>
-                        <div className="navtext">Tour</div>
-                        <div className="navtext">Saintmartin</div>
-                        <div className="navtext">Tech</div>
-                        <div className="navtext">iPhone 13</div>
-                        <div className="navtext">User Interface Design</div>
+                       {suggestion.map((i)=>(
+                        <div key={i.id} className='navtext'>{i.sugg}</div>
+                       ))}
                     </div>
                     <hr className='hr' />
                 </div>
