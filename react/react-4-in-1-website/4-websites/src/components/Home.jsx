@@ -4,33 +4,7 @@ const Home = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 min-h-screen text-white">
     {/* Navbar */}
-    <nav className="bg-gradient-to-r from-purple-600 to-blue-600 shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">DataWorld</h1>
-        <ul className="flex space-x-6">
-          <li>
-            <a href="#meal" className="text-lg hover:underline">
-              Meals
-            </a>
-          </li>
-          <li>
-            <a href="#cocktail" className="text-lg hover:underline">
-              Cocktails
-            </a>
-          </li>
-          <li>
-            <a href="#potter" className="text-lg hover:underline">
-              Potter
-            </a>
-          </li>
-          <li>
-            <a href="#bank" className="text-lg hover:underline">
-              Bank
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    
 
     {/* Hero Section */}
     <section className="text-center py-20 px-4">

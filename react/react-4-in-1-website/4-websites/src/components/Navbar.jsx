@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location=useLocation();
+  const isCocktailRoute= location.pathname==="/cocktail";
   return (
-    <nav>
-      <ul className="flex justify-around  h-20 text-xl font-bold text-white bg-[linear-gradient(273deg,#ff0000,#dd3fe9)] border  items-center ">
-        <li>
+    <nav
+      className={`h-20 text-xl font-bold text-white border flex justify-around items-center ${
+        isCocktailRoute
+          ? "bg-blue-500" // Blue for Cocktail route
+          : "bg-[linear-gradient(273deg,#ff0000,#dd3fe9)]" // Default gradient
+      }`}
+    >    
+ <ul className="flex justify-around space-x-40">        <li>
           <Link to="/">Home</Link>
         </li>
         <li>

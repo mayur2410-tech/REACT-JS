@@ -53,7 +53,7 @@ const Meals = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)} // Update query state
           placeholder="Search for a meal..."
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
         />
       </div>
 
@@ -68,7 +68,7 @@ const Meals = () => {
         {meals.map((meal) => (
           <div
             key={meal.idMeal}
-            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+            className="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl border hover:border-pink-500 transition"
           >
             <img
               src={meal.strMealThumb}
@@ -77,12 +77,12 @@ const Meals = () => {
             />
             <h3 className="text-lg font-bold">{meal.strMeal}</h3>
             <p className="text-gray-500">Category : {meal.strCategory}</p>
-            <p className="text-gray-500">Area : {meal.strCategory}</p>
+            <p className="text-gray-500">Area : {meal.strArea}</p>
             <a
               href={meal.strYoutube || "#"}
               target="itself"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline mt-2 block"
+              className="text-white rounded-lg text-center hover: mt-2 block bg-pink-500"
             >
               View Recipe
             </a>
