@@ -419,7 +419,14 @@ const search= {
 }
 
 app.get('/search',(req,res)=>{
-    res.json(search);
+    const q=req.query.q
+   if(q==='react'){
+    res.json({success:true,search})
+   }else{
+    res.status(400).json({ success: false, message: 'Invalid or missing query parameter' });
+   }
+    
+    
 });
 
 app.listen(port,()=>{

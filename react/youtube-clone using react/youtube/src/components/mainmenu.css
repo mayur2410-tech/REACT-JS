@@ -1,7 +1,10 @@
 * {
   background-color: black;
 }
-
+.mainmenu{
+margin-left: 270px;
+width:82% ;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -104,10 +107,12 @@
 
 .strip {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 270px 270px 270px 270px ;
   margin-top: 1.25rem;
+  column-gap: 40px;
   margin-left: 1.25rem;
   height: 12.5rem;
+  width: auto;
 }
 
 .thumbnail {
@@ -125,11 +130,20 @@
 #logo1 {
   margin-left: 0.0625rem;
   margin-top: 0.3125rem;
+  width: 50px;
+  height: auto;
+  border-radius: 20px;
+ /* border: 2px solid red; */
+}
+.logo-img{
+  height: 25px;
+  width: auto;
+  border-radius: 100%;
 }
 
 .mayur {
   margin-left: 2.4375rem;
-  margin-top: -1.625rem;
+  margin-top: -3.625rem;
   font-size: 0.9375rem;
 }
 
@@ -139,7 +153,8 @@
 }
 
 .img-main {
-  width: 18.75rem;
+  width: 17.75rem;
+  height: 14rem;
   transition: all 0.4s ease-in-out;
 }
 
